@@ -1,9 +1,13 @@
 {% block content %}
 <h1>Student Details</h1>
 <table>
-    {%for key,value in studentOrganisationDetails.items()%}
-
-    {%endfor%}
+    {% for key,value in studentOrganizationDetails.items() %}
+        <ul>{{key}}: {{value}}</ul>
+    {% endfor %}
 </table>
+
+<a href="/addStudentOrganization">Go Back to Form</a>
+<p></p>
+<a href="/">Go Back to Main Page</a>
 
 {% endblock %}

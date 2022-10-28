@@ -1,4 +1,13 @@
 {% block content %}
 <h1>Home</h1>
 
+<h3>Enter an Integer:</h3>
+<form action="/calculate" method="POST">
+    <label for="number"> Enter a number: </label>
+    <input type="number" name="number" id="number">
+    <input type="submit" value="Submit">
+</form>
+
 {% endblock %}
+
+<a href="/">Go Back to Main Page</a>

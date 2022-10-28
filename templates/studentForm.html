@@ -1,6 +1,28 @@
 {% block content %}
+
 <h1>Register</h1>
 <h4>Enter Student Information below</h4>
+
 <!--Form to request user's name-->
+<h4> Add a student to an organization </h4>
+    <form action="\addStudentOrganization" method="POST">
+
+        <label for="name">Enter name:</label>
+        <input type="text" name="name" id="name">
+
+        <label for="organization">Enter organization:</label>
+        <select id="organization" name="organization">
+            <option value="Running club">Running club</option>
+            <option value="Soccer club">Soccer club</option>
+            <option value="Swimming club">Swimming club</option>
+            <option value="Coding club">Coding club</option>
+            <option value="Computer club">Computer club</option>
+            <option value="Chess club">Chess club</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+
+    <a href="/">Go Back to Main Page</a>
+
 
 {% endblock %}
